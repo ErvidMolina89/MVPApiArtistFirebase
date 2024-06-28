@@ -24,4 +24,7 @@
     <string name="select_service">Selecciona tu opción favorita</string>
     <string name="tracks">Canciones</string>
     <string name="artist">Artistas</string>
+    <string name="details_password">Los campos contraseña y confirmar contraseña no coinciden</string>
+    <string name="Error">Error</string>
+    <string name="user_create">Se creo correctamente el usuario</string>
 </resources>

@@ -13,7 +13,7 @@ open class BaseFragment: Fragment() {
     var view: View? = null
 
     fun dialogueFragment(title: Int,
-                                 detail: Int,
+                                 detail: String,
                                  type: DialogueGenerico.TypeDialogue){
         DialogueGenerico
             .getInstance()

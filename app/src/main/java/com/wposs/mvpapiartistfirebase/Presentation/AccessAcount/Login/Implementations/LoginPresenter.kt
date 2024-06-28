@@ -24,8 +24,6 @@ class LoginPresenter (private val context: Context, view : ILoginView): ILoginPr
         loginBL.startSection(user)
     }
 
-
-
     private inner class Listener : ILoginListener{
         override fun credentialsIncorrect() {
             loginView.credentialsIncorrect()
