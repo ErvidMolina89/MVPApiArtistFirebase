@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471204450817",
+    "project_id": "mvpapiartistfirebase",
+    "storage_bucket": "mvpapiartistfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471204450817:android:19c055663c9902bf49a600",
+        "android_client_info": {
+          "package_name": "com.wposs.mvpapiartistfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmNlaxjhEJj6rdqIm0d2YAOzKKCxEeaD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
