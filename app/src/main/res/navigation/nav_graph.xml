@@ -31,7 +31,21 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.wposs.mvpapiartistfirebase.Presentation.Dash.Home.Implementations.HomeFragment"
-        android:label="HomeFragment"/>
+        android:name="com.wposs.mvpapiartistfirebase.Presentation.Dash.Home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_listServiceFragment"
+            app:destination="@id/listServiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listServiceFragment"
+        android:name="com.wposs.mvpapiartistfirebase.Presentation.Dash.ListSongs.Implementations.ListServiceFragment"
+        android:label="ListServiceFragment">
+        <argument
+            android:name="Servicio"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
 
 </navigation>

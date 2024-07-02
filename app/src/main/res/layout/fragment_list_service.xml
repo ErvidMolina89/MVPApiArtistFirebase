@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_8dp"
+    android:background="@android:color/transparent"
+    tools:context=".Presentation.Dash.ListSongs.Implementations.ListServiceFragment">
+
+    <TextView
+        android:id="@+id/tv_title_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/_8dp"
+        android:text="@string/list_service"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_35sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_songs"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_height="match_parent"
+        android:background="#00000000"/>
+
+</LinearLayout>
