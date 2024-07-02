@@ -24,4 +24,16 @@
     <string name="select_service">Selecciona tu opción favorita</string>
     <string name="tracks">Canciones</string>
     <string name="artist">Artistas</string>
+    <string name="details_password">Los campos contraseña y confirmar contraseña no coinciden</string>
+    <string name="Error">Error</string>
+    <string name="user_create">Se creo correctamente el usuario</string>
+    <string name="list_service">Lista de Item por Servicio</string>
+    <string name="title_tracks">Lista de Canciones</string>
+    <string name="title_artists">Lista de Artistas</string>
+    <string name="name">"Nombre: "</string>
+    <string name="duration">"Duración: "</string>
+    <string name="listeners">"Reproducciones: "</string>
+    <string name="artists">"Artistas: "</string>
+    <string name="rank">"Rank: "</string>
+    <string name="error_servicio">Error Servicio</string>
 </resources>
