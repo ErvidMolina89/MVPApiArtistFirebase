@@ -193,9 +193,8 @@ class DialogueGenerico private constructor(): DialogFragment() {
         return this
     }
 
-    private @StringRes
-    var routeText : Int ?= null
-    fun withText(@StringRes routeString : Int): DialogueGenerico {
+    private var routeText : String ?= null
+    fun withText(routeString : String): DialogueGenerico {
         this.routeText = routeString
         return this
     }

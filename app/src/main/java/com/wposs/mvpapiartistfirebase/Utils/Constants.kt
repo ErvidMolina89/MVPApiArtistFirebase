@@ -9,6 +9,12 @@ class Constants {
 
     object Keys {
         const val USER: String = "USER"
+        const val SERVICE: String = "Servicio"
+    }
+
+    object Service {
+        const val TRACKS: String = "Tracks"
+        const val ARTISTS: String = "Artists"
     }
 
     object Tag {

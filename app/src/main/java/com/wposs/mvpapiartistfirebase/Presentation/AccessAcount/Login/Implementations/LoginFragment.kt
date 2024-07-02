@@ -61,12 +61,12 @@ class LoginFragment : BaseFragment() {
 
         override fun credentialsIncorrect() {
             dialogueFragment(R.string.credentials_incorrect,
-                R.string.details_credentials_incorrect,
-                DialogueGenerico.TypeDialogue.ADVERTENCIA)
+                getString(R.string.details_credentials_incorrect),
+                DialogueGenerico.TypeDialogue.ERROR)
         }
 
         override fun showDialogFragment(title: Int, detail: Int, type: DialogueGenerico.TypeDialogue) {
-            dialogueFragment(title, detail, type)
+            dialogueFragment(title, getString(detail), type)
         }
 
     }

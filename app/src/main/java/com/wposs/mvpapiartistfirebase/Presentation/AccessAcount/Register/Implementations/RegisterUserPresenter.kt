@@ -19,7 +19,7 @@ class RegisterUserPresenter (private val context: Context, view : IRegisterUserV
     }
 
     override fun registerUser(user: User) {
-        if (user.validatePassEqualConfirPass()) return registerView.showDialogFragment(R.string.internet, R.string.not_connection_internet, DialogueGenerico.TypeDialogue.ADVERTENCIA)
+        if (user.validatePassEqualConfirPass()) return registerView.showDialogFragment(R.string.password, R.string.details_password, DialogueGenerico.TypeDialogue.ADVERTENCIA)
         if (!isNetworkAvailable(context)) return registerView.showDialogFragment(R.string.internet, R.string.not_connection_internet, DialogueGenerico.TypeDialogue.ADVERTENCIA)
         if (!user.validateFieldsUser()) return registerView.showDialogFragment(R.string.fields_empty, R.string.details_fields_empty, DialogueGenerico.TypeDialogue.ADVERTENCIA)
         bL.registerUser(user)

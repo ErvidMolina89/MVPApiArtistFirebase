@@ -18,13 +18,24 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "Base_Url", "\"http://ws.audioscrobbler.com/2.0/\"")
+            buildConfigField("String", "Api_Key", "\"&country=spain&api_key=829751643419a7128b7ada50de590067&format=json\"")
+        }
+        getByName("debug") {
+            isDebuggable = true
+            buildConfigField("String", "Base_Url", "\"http://ws.audioscrobbler.com/2.0/\"")
+            buildConfigField("String", "Api_Key", "\"&country=spain&api_key=829751643419a7128b7ada50de590067&format=json\"")
         }
     }
     compileOptions {
@@ -56,4 +67,9 @@ dependencies {
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.core)
     implementation(libs.firebase.auth)
+    //retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    //libreria picasso
+    implementation(libs.picasso)
 }
